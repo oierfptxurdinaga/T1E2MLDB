@@ -1,0 +1,444 @@
+/* =====================
+   GOIBURUA (HEADER) ETA LOGOA
+   ===================== */
+
+/* LOGOA: Irudiaren zabalera ezarri */
+.logoa {
+    width: 150px; 
+    padding: 10px;
+    border-radius: 25%;
+}
+
+/* GOIBURUA: Flexbox edukiontzi nagusia */
+header {
+    /* Atzeko kolorea: Gorri iluna */
+    background-color: #9e1515; 
+    
+    display: flex; 
+    align-items: center; 
+    /* ALDAKETA: 'space-between' berreskuratu, logoa ezkerrera eta menua eskuinera doala ziurtatzeko */
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    
+    padding: 8px 16px;
+    border-radius: 10px;
+    gap: 20px; 
+}
+
+/* NABIGAZIOA (NAV) */
+nav {
+    /*  Nav eskuinera bultzatzen du eta espazioa betetzen du */
+    margin-left: auto;
+    flex-grow: 1; 
+    min-width: 250px; 
+    text-align: right; 
+}
+
+
+/* =====================
+   2. NABIGAZIO MENUA (UL.MENUA)
+   ===================== */
+
+/* Oinarrizko zerrenden berreabiarazi */
+.menua,
+.menua ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* MENUKO A (a eta span.menu-aita) ESTILO NAGUSIA */
+/* GURASOAK (GOIKO MAILA) */
+.menua a,
+.menu-aita {
+    /* Estilo bisualak: Kaxa biribildua, ertz beltza, hondo zuria */
+    background-color: white; 
+    color: black; 
+    border: 2px solid black; 
+    border-radius: 14px; 
+    padding: 10px 18px; 
+    font-weight: 600; /*600	Semi-bold(semi negrita)*/
+    text-decoration: none;
+    /*Elementu batek bloke tradizional baten antzera jokatzen du*/
+    box-sizing: border-box; 
+    /* GURASOEN ZABALERA */
+    display: block; 
+    width: 100%; 
+    text-align: center;
+}
+
+/* GURASOEN BOTOIEN HOVER EFEKTOA (Gris ilunagoa) */
+.menua a:hover,
+.menu-aita:hover {
+    background-color: #dddddd; 
+}
+
+/* LI elementua (aiteen edukiontzia) */
+.menua > li {
+    position: relative; 
+    flex-basis: 150px; 
+    flex-grow: 1; 
+    min-width: 150px; 
+    max-width: 250px;
+}
+
+/* Zerrenda nagusiaren barruko flexbox */
+.menua {
+    display: flex;
+    flex-wrap: wrap; 
+    /* ALDAKETA: 'center' erabili 'flex-end' beharrean, mugikorretan zentratzeko */
+    justify-content: center; 
+    gap: 10px; 
+}
+
+
+/* =====================
+   3. AZPIMENUA (SUBMENUA) - KAJA BELTZA
+   ===================== */
+
+/* AZPIMENUA EGOERA INIZIALA: KAJA BELTZA */
+.submenua {
+    display: none; 
+    
+    position: absolute;
+    top: 100%; 
+    right: 0; 
+    z-index: 10;
+    
+    /* KAJA BELTZA */
+    background-color: black; 
+    border-radius: 14px;
+    padding: 10px; 
+    
+    /* ZABALERA */
+    width: 250px; 
+    min-width: 220px;
+
+    /* FLEXBOX */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+/* GAKOA: HOVER AZPIMENUA ERAKUSTEKO (CSS soilik) */
+.menua > li:hover > .submenua {
+    display: flex; 
+}
+
+/* AZPIMENUKO ELEMENTUEN EDUKIONTZIA (LI) */
+.submenua li {
+    margin: 5px 0; 
+    list-style-type: none; 
+    width: 100%; 
+    text-align: center; 
+}
+
+/* AZPIMENUAREN ENLACEAK (<a>) - SEME-ALABEN ESTILO INBERTITUA */
+.submenua li a {
+    /* Koloreak inbertitu (Hondo gardena, testu zuria, ertz zuria) */
+    background-color: transparent; 
+    color: white; 
+    border: 2px solid white; 
+    border-radius: 14px; 
+    
+    /* Botoia edukira egokitzen da */
+    display: inline-block; 
+    padding: 10px 18px; 
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    
+    box-sizing: border-box;
+    transition: background-color 0.2s ease;
+}
+
+/* =====================
+   4. HOVER: AZPIMENUAREN KONTROLA
+   ===================== */
+
+/* Azpimenuko enlaceen HOVER efektua: Koloreak leheneratu */
+.submenua li a:hover {
+    background-color: white; 
+    color: black; 
+    text-decoration: none; 
+    border: 2px solid black; 
+}
+
+
+/* =====================
+   5. OINA (FOOTER) - OINARRIZKO ESTILOAK ERANTZUNKIZUNERAKO
+   ===================== */
+footer {
+    display: flex;
+    flex-direction: row; 
+    /* Kolorearen zuzenketa */
+    background-color: #9e1515;
+    color: white;
+    padding: 25px 40px;
+    border-radius: 10px;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ALDAKETA: TESTU ELEMENTUAK (Helbidea, Telefonoa, Posta elektronikoa) */
+footer p {
+    /* GAKOA: Elementu bakoitzak zabalera osoa hartzen du, beti pilatuta ager daitezen */
+    flex-basis: 100%; 
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* GIZARTE SAREAK (FOOTER-SOCIAL EDUKIONTZIA) */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    /* Gizarte sareen kutxak zabalera osoa hartzen du, zentratzea errazteko */
+    flex-basis: 100%; 
+    margin-top: 15px;
+    gap: 15px;
+}
+
+/* IKONOAK */
+.footer-icon {
+    width: 26px;
+    height: auto;
+    border-radius: 4px; 
+    filter: invert(1);
+}
+/* =====================
+   6.Orrientzako (TITULUAREN ESTILOA)
+   ===================== */
+.orri-izenburua {
+
+    /* TIPOGRAFIA ETA KOLOREA */
+    color: #444; /* Gris iluna (ia beltza) irakurgarritasunerako */
+    font-size: 2.2em; /* Tamaina zabala nabarmentzeko */
+    font-weight: 700; /* Negrita (Bold) pisua emateko */
+    text-transform: uppercase; /* Aukerakoa: maiuskulaz jartzea itxura formalagoa izateko */
+    letter-spacing: 1px; /* Letren arteko bereizketa sotila */
+
+    text-align: center;
+    
+    /* ZENTRATZEA */
+    /* 'inline-block' elementua bere gurasoan zentratzeko teknika estandarra da */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Tartea eta Lerro Dekorazioa */
+    padding-bottom: 10px; /* Testuaren azpian dagoen tartea */
+    margin-top: 30px; 
+    margin-bottom: 30px; /* Goiko eta beheko marjina */
+    border-bottom: 3px solid #8B0000; /* Markaren koloreko lerroa (gorri iluna) */
+
+}
+/* =====================
+   7.Organigrama (MAIN, SECTION eta ARTICLE)
+   ===================== */
+
+.blokea {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.bloke-nagusia {
+  background: #f8e0e0;
+}
+
+.azpi-blokeak {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.azpi-blokea {
+  background: #f2f2f2;
+  border-radius: 8px;
+  padding: 15px;
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.azpi-blokea h3,
+.azpi-blokea h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin: 0 0 5px;
+}
+
+.azpi-blokea p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.kolore-arrosa {
+  background: #eec1c1;
+}
+
+.kolore-berdea {
+  background: #d8f1dc;
+}
+
+.kolore-grisa {
+  background: #ececec;
+}
+
+.atal-nagusia {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 30px 0 10px;
+  border-bottom: 2px;
+}
+/* =====================
+   7.BSFren Historioa (MAIN, SECTION eta ARTICLE)
+   ===================== */
+.BSF-izenburua {
+    color: #444;
+    text-align: center;
+    font-weight: 700;
+
+    /* Tartea eta Lerro Dekorazioa */
+    padding-bottom: 10px; /* Testuaren azpian dagoen tartea */
+    margin-top: 30px; 
+    margin-bottom: 30px; /* Goiko eta beheko marjina */
+    
+}
+.hist1 {
+  border: solid;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  padding-left: 6px;
+}
+
+.hitzhist1 {
+  margin-left: 10px;
+  color: #9e1515;
+  font-weight: 600;
+}
+
+.imghist {
+  margin-bottom: 30px;
+  width: 40%;
+  max-width: 560px;
+  min-width: 220px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.hist2 {
+  border: solid;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+.hitzhist2 {
+  margin: 10px;
+}
+
+.divhist {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.info-layout {
+    display: flex; 
+    flex-direction: column;     
+    align-items: center; 
+
+}
+
+
+
+.clasificacion-tabla {
+    display: flex;
+    border: solid;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    flex: 1; 
+    min-width: 300px;
+    
+
+}
+
+
+.tabla-clasificacion {
+    width: 100%;
+    border-collapse: collapse; 
+}
+/* =====================
+   7.Taldeak (SECTION, ARTICLE)(Dinamikoki Kargatzen da)
+   ===================== */
+
+/* Contenedor de todos los equipos */
+.sectiontaldeak {
+    display: flex;
+    flex-direction: column; /* Opcional: para poner los equipos en fila, si caben */
+    flex-wrap: wrap; /* En caso de que haya muchos y se necesite que salten de línea */
+    gap: 20px; /* Espacio entre las cajas de los equipos */
+    align-items: center;
+    
+}
+
+/* Estilo para la caja individual de cada equipo */
+.articletaldeak {
+    display: flex; /* Clave: Pone la imagen y la info lado a lado */
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 25px; /* Espacio entre cada equipo */
+    width: 50%; /* Ajusta el ancho según el diseño de tu página */
+    box-shadow: 5px 5px 5px black; /* Sombra sutil */
+    
+}
+
+/* Estilo para el logo del equipo */
+.taldeaklogo {
+    max-width: 150px; /* Limita el tamaño del logo */
+    height: auto;
+    margin-right: 25px; /* Espacio entre el logo y la información */
+}
+
+/* Contenedor de la información textual */
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Nombre del equipo dentro de la caja (en rojo) */
+.info h2 {
+    color: red;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 0 5px 0; /* Ajuste fino de márgenes */
+}
+
+/* Dirección (párrafo) */
+.info p {
+    margin: 0 0 5px 0;
+    font-size: 0.95em;
+    color: #333;
+}
+
+/* Enlace a la web */
+.info a {
+    color: blue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
