@@ -1,0 +1,104 @@
+$(document).ready(function () {
+
+
+
+
+    /* =====================
+            HEADER Menua
+    ===================== */
+    // Submenua iskutatu
+    $(".submenua").hide();
+
+    // Lógica para el submenú (hover)
+    $(".menua > li").hover(
+        function () {
+            // Aitaren LI sartzean
+            $(this)
+                .find(".submenua")
+                .stop(true, true)
+                .slideDown(200);
+        },
+        function () {
+            // Aitaren LI ateratzean (submenuak)
+            $(this)
+                .find(".submenua")
+                .stop(true, true)
+                .slideUp(200);
+        }
+    );
+    /* =====================
+        Taldeak XSL
+===================== */
+    $("#taldeak").on("click", function () {
+
+        document.title = "Taldeak";
+
+        $.ajax({
+            type: "GET",
+            url: "xml/Taldeak.xml",
+            dataType: "xml",
+            success: function (xml) {
+                $.ajax({
+                    type: "GET",
+                    url: "xml/Taldeak.xsl",
+                    dataType: "xml",
+                    success: function (xsl) {
+                        var xsltProcessor = new XSLTProcessor();
+                        xsltProcessor.importStylesheet(xsl);
+                        var resultDocument = xsltProcessor.transformToDocument(xml);
+                        var resultHtml = new XMLSerializer().serializeToString(resultDocument);
+                        $("main").html(resultHtml);
+                    },
+                    error: function () {
+                        console.log("Error loading XSL");
+                    }
+                });
+            },
+            error: function () {
+                console.log("Error loading XML");
+            }
+        });
+    });
+
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showNextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+
+    setInterval(showNextSlide, 3000);
+
+    $("#organigrama").on("click", function (e) {
+        e.preventDefault(); // <- Esto evita que la página salte
+        document.title = "Organigrama";
+        $("main").load("organigramaReal.html");
+    });
+
+    $("#historioa").on("click", function (e) {
+        e.preventDefault(); // <- Esto evita que la página salte
+        document.title = "Historioa";
+        $("main").load("BSFrenHistorioa.html");
+    });
+
+    $("#jaurdunaldiak").on("click", function (e) {
+        e.preventDefault(); // <- Esto evita que la página salte
+        document.title = "Jaurdunaldiak";
+        $("main").load("Jaurdunaldiak.html");
+    });
+
+    $("#sailkapena").on("click", function (e) {
+        e.preventDefault(); // <- Esto evita que la página salte
+        document.title = "Sailkapena";
+        $("main").load("Sailkapena.html");
+    });
+
+    $("#kontaktua").on("click", function (e) {
+        e.preventDefault(); // <- Esto evita que la página salte
+        document.title = "Gure Kontaktua";
+        $("main").load("Kontaktua.html");
+    });
+
+});
