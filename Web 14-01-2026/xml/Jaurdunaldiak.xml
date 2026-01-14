@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Jaurdunaldiak.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<jaurdunaldiak>
+    <jaurdunaldia izena="Seigarren Jaurdunaldia">
+        <partidua ordua="17:00">
+            <etxekoa>
+                <izena>Tabirako</izena>
+                <logoa>argazkiak/tabirako.png</logoa>
+                <puntuak>68</puntuak>
+            </etxekoa>
+            <kanpokoa>
+                <izena>Ibaizabal</izena>
+                <logoa>argazkiak/ibaizabal_taldea.jpg</logoa>
+                <puntuak>72</puntuak>
+            </kanpokoa>
+        </partidua>
+
+        <partidua ordua="19:00">
+            <etxekoa>
+                <izena>LaSalle</izena>
+                <logoa>argazkiak/Lasalle_taldea.jpg</logoa>
+                <puntuak>99</puntuak>
+            </etxekoa>
+            <kanpokoa>
+                <izena>Salesianos</izena>
+                <logoa>argazkiak/salesianos.jpg</logoa>
+                <puntuak>85</puntuak>
+            </kanpokoa>
+        </partidua>
+
+        <partidua ordua="21:00">
+            <etxekoa>
+                <izena>Unamuno</izena>
+                <logoa>argazkiak/unamuno.png</logoa>
+                <puntuak>80</puntuak>
+            </etxekoa>
+            <kanpokoa>
+                <izena>Loiola</izena>
+                <logoa>argazkiak/loiola.jpg</logoa>
+                <puntuak>81</puntuak>
+            </kanpokoa>
+        </partidua>
+    </jaurdunaldia>
+
+    <jaurdunaldia izena="Zazpigarren Jaurdunaldia">
+        <partidua ordua="17:00">
+            <etxekoa>
+                <izena>Salesianos</izena>
+                <logoa>argazkiak/salesianos.jpg</logoa>
+                <puntuak>67</puntuak>
+            </etxekoa>
+            <kanpokoa>
+                <izena>Tabirako</izena>
+                <logoa>argazkiak/tabirako.png</logoa>
+                <puntuak>69</puntuak>
+            </kanpokoa>
+        </partidua>
+
+        <partidua ordua="19:00">
+            <etxekoa>
+                <izena>LaSalle</izena>
+                <logoa>argazkiak/Lasalle_taldea.jpg</logoa>
+            </etxekoa>
+            <kanpokoa>
+                <izena>Unamuno</izena>
+                <logoa>argazkiak/unamuno.png</logoa>
+            </kanpokoa>
+        </partidua>
+
+        <partidua ordua="21:00">
+            <etxekoa>
+                <izena>Ibaizabal</izena>
+                <logoa>argazkiak/ibaizabal_taldea.jpg</logoa>
+            </etxekoa>
+            <kanpokoa>
+                <izena>Loiola</izena>
+                <logoa>argazkiak/loiola.jpg</logoa>
+            </kanpokoa>
+        </partidua>
+    </jaurdunaldia>
+
+    <jaurdunaldia izena="Zortzigarren Jaurdunaldia">
+        <partidua ordua="17:00">
+            <etxekoa>
+                <izena>Salesianos</izena>
+                <logoa>argazkiak/salesianos.jpg</logoa>
+            </etxekoa>
+            <kanpokoa>
+                <izena>Loiola</izena>
+                <logoa>argazkiak/loiola.jpg</logoa>
+            </kanpokoa>
+        </partidua>
+
+        <partidua ordua="19:00">
+            <etxekoa>
+                <izena>Tabirako</izena>
+                <logoa>argazkiak/tabirako.png</logoa>
+            </etxekoa>
+            <kanpokoa>
+                <izena>LaSalle</izena>
+                <logoa>argazkiak/Lasalle_taldea.jpg</logoa>
+            </kanpokoa>
+        </partidua>
+
+        <partidua ordua="21:00">
+            <etxekoa>
+                <izena>Ibaizabal</izena>
+                <logoa>argazkiak/ibaizabal_taldea.jpg</logoa>
+            </etxekoa>
+            <kanpokoa>
+                <izena>Unamuno</izena>
+                <logoa>argazkiak/unamuno.png</logoa>
+            </kanpokoa>
+        </partidua>
+    </jaurdunaldia>
+
+</jaurdunaldiak>

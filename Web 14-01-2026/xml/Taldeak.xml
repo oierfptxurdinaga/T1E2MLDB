@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Taldeak.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<Taldeak>
+
+  <taldea id="t1">
+    <irudia>argazkiak/ibaizabal_taldea.jpg</irudia>
+    <izena>Ibaizabal</izena>
+    <helbidea>Intxaurrrondo kalea 54, 48200 Durango (Bizkaia)</helbidea>
+    <web>https://www.ibaizabalst.eus/</web>
+    <audioak>audioak/Himno del Club Ibaizabal Basket Galdakao.mp3</audioak>
+  </taldea>
+
+  <taldea id="t2">
+    <irudia>argazkiak/Lasalle_taldea.jpg</irudia>
+    <izena>La Salle</izena>
+    <helbidea>Madariaga Hiribidea, 67, Deusto, 48014 Bilbao, Bizkaia</helbidea>
+    <web>https://www.clubdeportivolasalle.com/pub/homeDeporte.asp?idioma=ca&amp;IdD=2</web>
+    <audioak>audioak/Himno del Bilbao Basket.mp3</audioak>
+  </taldea>
+
+  <taldea id="t3">
+    <irudia>argazkiak/salesianos.jpg</irudia>
+    <izena>Salesianos</izena>
+    <helbidea>AVDA.LEHENDAKARI AGUIRRE, 75 - 48014 - Vizcaya</helbidea>
+    <web>https://www.salesianosdeusto.com/tiempo-libre-y-deportes/baloncesto-2/</web>
+    <audioak>audioak/Himno de la SD Moraza.mp3</audioak>
+  </taldea>
+
+  <taldea id="t4">
+    <irudia>argazkiak/tabirako.png</irudia>
+    <izena>Tabirako</izena>
+    <helbidea>GP/ MURUETA TORRE AUZUNEA(P.LANDAKO) S/N - 48200 - Vizcaya</helbidea>
+    <web>https://www.tabirako.eus/es</web>
+    <audioak>audioak/anthem-of-victory-111206.mp3</audioak>
+  </taldea>
+
+  <taldea id="t5">
+    <irudia>argazkiak/loiola.jpg</irudia>
+    <izena>Loiola</izena>
+    <helbidea>AL/ DOCTOR AREILZA, 32 - 48010 - Vizcaya</helbidea>
+    <web>https://www.loiolabasket.com</web>
+    <audioak>audioak/audio-club-edyn-343275.mp3</audioak>
+  </taldea>
+
+  <taldea id="t6">
+    <irudia>argazkiak/unamuno.png</irudia>
+    <izena>Unamuno</izena>
+    <helbidea>CL/ LICENCIADO POZA, 1 - 48008 - Vizcaya</helbidea>
+    <web>https://unamunosk.com/</web>
+    <audioak>audioak/scottish-warrior-449828.mp3</audioak>
+  </taldea>
+
+</Taldeak>
