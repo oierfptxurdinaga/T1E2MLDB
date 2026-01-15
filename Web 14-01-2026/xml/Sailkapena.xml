@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Sailkapena.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<sailkapena>
+    <taldea pos="1">
+        <izena>LaSalle</izena>
+        <logoa>argazkiak/Lasalle_taldea.jpg</logoa>
+        <puntuak>12</puntuak>
+        <jp>6</jp>
+        <irabaziak>6</irabaziak>
+        <galerak>0</galerak>
+        <ap>551</ap>
+        <kp>493</kp>
+    </taldea>
+
+    <taldea pos="2">
+        <izena>Unamuno</izena>
+        <logoa>argazkiak/unamuno.png</logoa>
+        <puntuak>11</puntuak>
+        <jp>6</jp>
+        <irabaziak>5</irabaziak>
+        <galerak>1</galerak>
+        <ap>480</ap>
+        <kp>470</kp>
+    </taldea>
+
+    <taldea pos="3">
+        <izena>Loiola</izena>
+        <logoa>argazkiak/loiola.jpg</logoa>
+        <puntuak>10</puntuak>
+        <jp>6</jp>
+        <irabaziak>4</irabaziak>
+        <galerak>2</galerak>
+        <ap>499</ap>
+        <kp>491</kp>
+    </taldea>
+
+    <taldea pos="4">
+        <izena>Ibaizabal</izena>
+        <logoa>argazkiak/ibaizabal_taldea.jpg</logoa>
+        <puntuak>10</puntuak>
+        <jp>6</jp>
+        <irabaziak>4</irabaziak>
+        <galerak>2</galerak>
+        <ap>474</ap>
+        <kp>475</kp>
+    </taldea>
+
+    <taldea pos="5">
+        <izena>Tabirako</izena>
+        <logoa>argazkiak/tabirako.png</logoa>
+        <puntuak>10</puntuak>
+        <jp>7</jp>
+        <irabaziak>3</irabaziak>
+        <galerak>4</galerak>
+        <ap>540</ap>
+        <kp>545</kp>
+    </taldea>
+
+    <taldea pos="6">
+        <izena>Salesianos</izena>
+        <logoa>argazkiak/salesianos.jpg</logoa>
+        <puntuak>7</puntuak>
+        <jp>7</jp>
+        <irabaziak>0</irabaziak>
+        <galerak>7</galerak>
+        <ap>552</ap>
+        <kp>594</kp>
+    </taldea>
+</sailkapena>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="jaurdunaldiak">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="jaurdunaldia" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="partidua" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="etxekoa" type="taldeaType"/>
+                                        <xs:element name="kanpokoa" type="taldeaType"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="ordua" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="izena" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="taldeaType">
+        <xs:sequence>
+            <xs:element name="izena" type="xs:string"/>
+            <xs:element name="logoa" type="xs:string"/>
+            <xs:element name="puntuak" type="xs:integer" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
